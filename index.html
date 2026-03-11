@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Janice Ying - Digital Contact Card</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="app-icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="app-icon.png" />
+  <meta name="theme-color" content="#FF4721" />
+
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 2em 1em;
+      color: #111;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 2em;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .logo {
+      max-width: 180px;
+      margin-bottom: 1.5em;
+    }
+
+    .top-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+      flex-wrap: wrap;
+      margin-bottom: 2em;
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #FF4721;
+    }
+
+    .qr-code {
+      width: 150px;
+      height: 150px;
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 24px;
+      margin: 0.5em 0 0.2em;
+      color: #111;
+    }
+
+    .title {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1.5em;
+      font-weight: 500;
+    }
+
+    .button {
+      background-color: #FF4721;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: 500;
+      display: inline-block;
+      margin-bottom: 1.2em;
+      transition: background-color 0.2s ease;
+    }
+
+    .button:hover {
+      background-color: #e03e1d;
+    }
+
+    .social-links {
+      margin-top: 1.5em;
+    }
+
+    .social-links a {
+      margin: 0 8px;
+      text-decoration: none;
+    }
+
+    .social-links img {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      filter: grayscale(100%);
+      transition: filter 0.2s ease;
+    }
+
+    .social-links img:hover {
+      filter: none;
+    }
+
+    @media (max-width: 600px) {
+      .top-section {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1em;
+      }
+
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+      }
+
+      .qr-code {
+        width: 130px;
+        height: 130px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Company Logo" class="logo">
+
+    <div class="top-section">
+      <img src="profile.jpeg" alt="Employee Photo" class="profile-pic">
+      <img src="qr.png" alt="QR Code" class="qr-code">
+    </div>
+
+    <h1>Janice Ying</h1>
+    <p class="title">Senior Manager, HR & Culture<br>Oneteam</p>
+
+    <a class="button" href="JaniceYing.vcf" download>Download Contact</a>
+
+    <div class="social-links">
+   <a href="https://https://www.oneteamhq.com/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/domain.png" alt="Website" /></a> <a href="https://www.linkedin.com/company/oneteamsg/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" /></a>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
